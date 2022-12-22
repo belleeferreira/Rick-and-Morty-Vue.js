@@ -1,0 +1,174 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7fa6c;
+    overflow-x: hidden ;
+
+}
+
+ul {
+    display: flex;
+    background-color: #a6eee6ff;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -3px;
+    border: 2px solid rgba(4, 161, 189, 0.034);
+    border-radius: 10px;
+}
+
+ul li {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    width: 180px;
+    height: auto;
+    padding: 15px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+
+img {
+    width: 100%;
+    border-radius: 20px;
+    height: auto;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+img:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+button {
+    background-color: #fbf5de;
+    color: #222;
+    font-weight: bold;
+    font-family: Helvetica;
+    border: none;
+    cursor: pointer;
+    height: 31px;
+    width: 60px;
+    position: relative;
+    border-radius: 5px;
+    
+}
+
+input {
+    color: #222;
+    background-color: #fbf5de;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    position: relative;
+}
+
+button,
+input {
+    bottom: 100%;
+    left: 45%;
+    justify-content:center ;
+    align-items: center;
+    display: flex-end;
+    margin-bottom: 10px;
+    margin-left: 3px
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.bi-moon{
+    display: none;
+}
+
+
+header {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    transform: translate(20px, -595px);
+    box-shadow: .5px .5px 10px .5px #000;
+    position: relative;
+}
+
+/*Dark theme*/
+
+.dark{
+    background-color: #3d373c;
+    color: #fff;
+}
+
+.dark ul{
+    background-color: #294753;
+}
+
+.dark li{
+    color: #fff;
+}
+
+.dark input{
+    background-color: rgb(39, 36, 36);
+    color: #fff;
+}
+
+.dark button {
+   background-color: rgb(39, 36, 36);
+   color: #fff;
+}
+
+.dark .bi-sun{
+    display: none;
+}
+
+.dark .bi-moon{
+    display: block;
+}
+
+
+
+
+@media (max-width: 1437px) {
+    button, input{
+        justify-content: center;
+        align-items: center;
+        display: flex-end;
+        top: 90%;
+        left: 40%;
+    }
+
+   
+}
+
+@media (max-width: 1078px) {
+    header{
+        justify-content: center;
+        align-items: center;
+        display: flex ;
+        top: 100% ;
+        position: relative;
+        transform: translate(20px, -999px);
+    }
+}
+
+@media (max-width: 827px) {
+    header{
+        justify-content: center;
+        align-items: center;
+        display: flex ;
+        top: 100% ;
+        position: relative;
+        transform: translate(20px, -1335px);
+    }
+}
